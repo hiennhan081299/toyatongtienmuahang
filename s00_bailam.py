@@ -4,19 +4,18 @@
 tongtienmuahang(gia_truoc_thue)
 
 --- nopbai
-00 fork tu bainopmau
-   https://github.com/namgivu/toyatongtienmuahang
+00 fork tu bainopmau tren replit tu trang web duoiday
+   https://replit.com/@NamG1/toya03tongtienmuahang
 
-01a lam bai vao tep s00_bailam.py, chay Run de co ketqua tatca la 1
-01b git commit va git push bailam
+01 lam bai vao tep s00_bailam.py, chay Run de co ketqua tatca la 1
+02a tao github repo, mo trinhduyetweb de kiemtra tep s00_bailam.py, va lay diachi/url aka githubbailamurl
 
-02a mo github.com cua ban va kiemtra tep s00_bailam.py, va lay diachi/url aka githubbailamurl tro den bailam nay
 02b dán diachi githubbailamurl theo mẫu ở trang web duoiday
-    https://forms.gle/Bw2eYGwbX6FpajLG6
+    https://forms.gle/vHWAaYjfGqNK3bSd8
 
 --- debai / problem
-Viết hàm 
-  tongtienmuahang(gia_truoc_thue) 
+Viết hàm
+  tongtienmuahang(gia_truoc_thue)
 tính tổng tiền sau thuế khi mua hàng với giá tiền :gia_truoc_thue
 Tiền thuế = 10% tổng tiền
 Kết quả số nguyên / int
@@ -32,5 +31,14 @@ tongtienmuahang(None)                   | None
 
 #region bailam
 def tongtienmuahang(gia_truoc_thue):
-  return 'TODO'
+  if gia_truoc_thue is None : return  None
+  thue = gia_truoc_thue * 10/100
+  r = thue + gia_truoc_thue
+  r = int(r)
+  return r
 #endregion bailam
+
+if __name__ == '__main__':
+  print(tongtienmuahang(1000000))
+  print(tongtienmuahang(gia_truoc_thue=1000000))
+  print(tongtienmuahang(None))
